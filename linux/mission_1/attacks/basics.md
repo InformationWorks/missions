@@ -5,6 +5,8 @@ Mission Linux
 ==========
 1->How does the directory structure look like in a linux file system?
 ------------------------------------------------------------------------------------
+
+
 		“/” (root) is the directory is parent of all the other directory of system. / contains following directories {bin    dev   initrd.img  lost+found  opt   run   sys  var
  boot   etc   lib   media       proc  sbin  tmp  vmlinuz
  cdrom  home  lib64       mnt         root  srv   usr
@@ -15,6 +17,8 @@ The purpose of all directory is explained below:
 
 2->What are executables & how do we get access to executables in the command promt.
 ----------------------------------------------------------------------------------------------------------
+
+
 	  Executable files are those which can be executed by machine directly. They are in a form that human can not read/understand.
 	To get the file executed from any where in machin, the file's parent directory must be included in $PATH. So now ultimatly two options are there to make file executable from any where 1) Put the file in the directory which is already exist in $PATH.
 	$PATH will enlist the directories in environment variable, Put the file in any of them.
@@ -24,5 +28,7 @@ The purpose of all directory is explained below:
 
 3->What are users &  groups in linux and how are they used while assiging permissions for files and folders.
 ------------------------------------------------------------------------------------------------------------------------
+
+
 	User is logically an account in linux. When ever user created, a directory with user_name is created under /Home and . This directory will contain user specific data. One user do not have access rights over other users Home directory.  Group is collaction of Users. Say there are 50 student users, and somebody want to grant permission of some file to all students. Instead of giving access individually , give access to “student group” which contains all 50 students account in it. 
 
